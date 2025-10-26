@@ -6,12 +6,17 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "helion>=0.2.0",
+    "jaxtyping>=0.3.3",
     "numpy>=2.3.4",
     "torch>=2.9.0",
     "triton>=3.5.0",
+    "triton-viz",
 ]
 
 [dependency-groups]
 dev = [
     "ipykernel>=7.0.1",
 ]
+
+[tool.uv.sources]
+triton-viz = { git = "https://github.com/Deep-Learning-Profiling-Tools/triton-viz", rev = "v1.1.1" }
