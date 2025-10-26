@@ -10,3 +10,8 @@ dependencies = [
     "torch>=2.9.0",
     "triton>=3.5.0",
 ]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.0.1",
+]
